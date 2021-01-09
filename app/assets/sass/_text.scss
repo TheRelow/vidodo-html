@@ -1,0 +1,51 @@
+@import "variables";
+
+a {
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.block {
+  margin: 0.5rem 0;
+  font-size: inherit;
+  line-height: inherit;
+  &_space {
+    &_x {
+      margin: 1rem 0;
+    }
+    &_xl {
+      margin: 1.5rem 0;
+    }
+    &_xxl {
+      margin: 2rem 0;
+    }
+  }
+}
+
+.text {
+  &_lh {
+    &_15 {
+      line-height: 1.5;
+    }
+  }
+}
+
+.text_regular {
+  font-weight: 500;
+}
+
+.text_acc {
+  color: $acc;
+}
+
+.text_small {
+  color: #888A93;
+  font-size: 0.666em;
+  line-height: 0.9em;
+}
+
+.text_warning {
+  margin: 8px 0;
+  color: #D80027;
+  font-weight: 700;
+}

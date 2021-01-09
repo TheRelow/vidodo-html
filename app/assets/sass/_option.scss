@@ -1,0 +1,149 @@
+@import "variables";
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  //min-width: 555px;
+  max-width: 100%;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #DEE0E5;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+
+.option {
+  display: block;
+  margin: 0.555rem 0;
+}
+
+.option-group {
+  margin: 1rem 0;
+}
+
+.option-title {
+  margin: 0.555rem 0;
+  font-weight: 700;
+}
+
+.check {
+  position: relative;
+  padding-left: 30px;
+}
+
+.check__input {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow:hidden;
+}
+
+.check__box {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  transition: 0.25s;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    border-radius: 50%;
+    background: #999;
+    opacity: 0;
+    transition: 0.25s ;
+  }
+  &_circle {
+    border-radius: 50%; }
+  &_acc {
+    border: 1px solid $acc;
+    &:after {
+      background: $acc;
+    }
+  }
+}
+
+.check__input:checked ~ .check__box {
+  border-radius: 50%;
+  border-color: $acc;
+  &:after {
+    opacity: 1;
+    background: $acc;
+  }
+}
+
+.check__if-not-checked {
+  display: block;
+  height: auto;
+  padding-left: 15px;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1em;
+  opacity: 1;
+  transition: 0.25s;
+  &_ok {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 8px;
+      height: 6px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/ok-black.svg);
+      background-size:cover;
+    }
+  }
+}
+
+.check__input:checked ~ .check__if-not-checked {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+}
+
+.check__if-checked {
+  display: block;
+  height: 0;
+  padding-left: 15px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1em;
+  opacity: 0;
+  transition: 0.25s;
+  &_ok {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 8px;
+      height: 6px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/ok-black.svg);
+      background-size:cover;
+    }
+  }
+}
+
+.check__input:checked ~ .check__if-checked {
+  height: auto;
+  margin-top: 6px;
+  opacity: 1;
+}

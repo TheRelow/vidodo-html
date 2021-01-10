@@ -62,8 +62,8 @@
         <div class="block elem_w_750">
           <div class="select-wrapper select-wrapper_type_2">
             <select>
-              <option value="123">We pick up all travelers </option>
               <option value="123">We can pick up travelers or meet them at a starting point</option>
+              <option value="123">We pick up all travelers </option>
               <option value="123">We meet all travelers at a starting point</option>
             </select>
           </div>
@@ -120,6 +120,42 @@
           This will be displayed on both the product page and travelers' tickets.
         </div>
         <textarea class="elem_w_750">E.g. how to find the pickup location, how travelers can find you.</textarea>
+      </div>
+      <div class="delimiter elem_w_750"></div>
+      <div class="page-title block block_space_xxl">Where will you meet travelers that don’t require pickup?</div>
+      <div class="block block_space_xxl">
+        <ul class="meeting-list elem_w_750">
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              Meeting point
+            </div>
+            <div class="search-line">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+            <div class="block block_space_xl">
+              <a href="javascript:;" class="text_acc"><b>+ Add another meeting point</b></a>
+            </div>
+            <div class="block block_space_xxl">
+              If your end point doesn’t look right , you can drag the pin to adjust its location.
+              <div class="map"></div>
+            </div>
+            <div class="block option-group">
+              <div class="option-title">Does this tour end at the same location(s) where it started?</div>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                Yes
+              </label>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                No
+              </label>
+            </div>
+          </li>
+        </ul>
       </div>
       <a href="javascript:;" class="btn btn_primary btn_big btn_text_regular">
         Save & continue

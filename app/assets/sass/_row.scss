@@ -1,0 +1,27 @@
+@import "variables";
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 50%;
+  &_address {
+    width: 70%;
+  }
+  &_address-controls {
+    display: flex;
+    justify-content: space-between;
+    width: calc(30% - 50px);
+  }
+}
+
+.col__x {
+  height: 100%;
+  width: 24px;
+  background-image: url(../img/x.svg);
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -12,7 +12,7 @@ html
   font-size: 18px
 
 body
-  min-height: 200vh
+  padding-bottom: 10vh
   font-family: 'Gilroy'
   font-weight: 500
   color: #1E2843
@@ -27,6 +27,8 @@ body
 @import "row"
 @import "option"
 @import "meeting-list"
+@import "block"
+@import "elem"
 
 
 .header
@@ -165,33 +167,12 @@ ul.dot
   &:hover
     color: #808186
 
-
-.show
-  display: inline-block
-  padding-right: 10px
-  background-image: url(../img/show.svg)
-  background-repeat: no-repeat
-  background-position: center right
-  font-size: 0.666rem
-  color: #989898
-  cursor: pointer
-  &:before
-    content: 'Show all'
-
-.page-title
+.map
+  width: 100%
+  height: 256px
   margin: 0.5em 0
-  font-weight: 700
-  font-size: 1.777rem
-
-.h4
-  font-size: 1.3333rem
-  font-weight: 700
-  margin: 0.375em 0
-  &__subtitle
-    margin-bottom: 18px
-    font-size: 1rem
-    font-weight: 500
-    line-height: 1.25
+  border-radius: 8px
+  background-color: #F2F1F0
 
 .tab
   margin-top: 19px

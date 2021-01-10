@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Title</title>
+  <link rel="stylesheet" href="assets/fonts/Gilroy/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="header__main">
+        <img class="logo" src="assets/img/logo.svg">
+        <nav>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Booking</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Finance</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link active" href="javascript:;">Product</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Availability</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Performance</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__side"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper main__wrapper">
+      <a href="javascript:;" class="back">Back to product content</a>
+      <h1 class="page-title">
+        Tell us how and where you meet your travelers
+      </h1>
+      <div class="info-block elem_w_750">
+        <div class="info-block__text block">
+          <b>Did you know?</b>
+        </div>
+        <div class="info-block__text block">
+          Travelers want to book products with accurate pickup locations so they can plan their day. Adding specific meeting and pickup points will help them find your product.
+        </div>
+      </div>
+      <div class="block block_space_xxl">
+        <div class="block">
+          <b>How do you meet your travelers?</b>
+        </div>
+        <div class="block elem_w_750">
+          <div class="select-wrapper select-wrapper_type_2">
+            <select>
+              <option value="123">We can pick up travelers or meet them at a starting point</option>
+              <option value="123">We meet all travelers at a starting point</option>
+              <option value="123">We pick up all travelers </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="block block_space_xxl">
+        <h2 class="page-title">
+          Now tell us where you pick up travelers
+        </h2>
+        <div class="option-group">
+          <div class="option-title">Where do you pick up your travelers?</div>
+          <label class="option check">
+            <input class="check__input" type="checkbox" checked>
+            <span class="check__box"></span>
+            Hotels
+          </label>
+          <label class="option check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box"></span>
+            Ports
+          </label>
+          <label class="option check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box"></span>
+            Airports
+          </label>
+          <label class="option check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box"></span>
+            Other
+          </label>
+        </div>
+      </div>
+      <div class="option-group block_space_xl">
+        <div class="option-title">How do you want to enter you hotel pickup information</div>
+        <label class="option check">
+          <input class="check__input" type="checkbox">
+          <span class="check__box check__box_circle"></span>
+          I want to define a general area of hotels I pick up from
+          <span class="check__if-not-checked">
+            I will select a radius in a city, neighborhood or specific address and pick up within that radius
+          </span>
+        </label>
+        <label class="option check">
+          <input class="check__input" type="checkbox">
+          <span class="check__box check__box_circle"></span>
+          I want to enter locations one at a time
+          <span class="check__if-not-checked">
+            I will add hotels individually
+          </span>
+        </label>
+      </div>
+      <label class="block option check">
+        <input class="check__input" type="checkbox">
+        <span class="check__box"></span>
+        I want to enter locations one at a time
+      </label>
+      <div class="block block_space_xxl">
+        <b>How long befor departure does your pickup start?</b>
+        <div class="unit-input block">
+          <input type="number" class="input unit-input__input" value="0">
+          <div class="select-wrapper unit-input__select-wrapper">
+            <select class="unit-input__select">
+              <option value="123">minutes</option>
+              <option value="123">hours</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="block block_space_xxl">
+        <div class="block">
+          <b>Add pickup details you'd like travelers to know</b>
+        </div>
+        <div class="block">
+          This will be displayed on both the product page and travelers' tickets.
+        </div>
+        <textarea class="elem_w_750">E.g. how to find the pickup location, how travelers can find you.</textarea>
+      </div>
+      <div class="delimiter elem_w_750"></div>
+      <div class="block block_space_xxl">
+        <div class="page-title"></div>
+        <ul class="meeting-list elem_w_750">
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              Meeting point
+            </div>
+            <div class="search-line">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+          </li>
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              Meeting point
+              <div class="meeting-list__controls">
+                <a href="javascript:;" class="meeting-list__btn">
+                  remove
+                </a>
+              </div>
+            </div>
+            <div class="search-line">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+            <div class="block block_space_xl">
+              <a href="javascript:;" class="text_acc"><b>+ Add another meeting point</b></a>
+            </div>
+            <div class="block block_space_xxl">
+              If your end point doesn’t look right , you can drag the pin to adjust its location.
+              <div class="map"></div>
+            </div>
+            <div class="block option-group">
+              <div class="option-title">Does this tour end at the same location(s) where it started?</div>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                Yes
+              </label>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio" checked>
+                <span class="check__box check__box_acc check__box_circle"></span>
+                No
+              </label>
+            </div>
+          </li>
+        </ul>
+        <ul class="meeting-list elem_w_750">
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              End point
+            </div>
+            <div class="search-line search-line_error block">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <div class="search-line__error-text text_small text_warning">Error text</div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+          </li>
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              End point
+            </div>
+            <div class="search-line block">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <div class="search-line__error-text text_small text_warning">Error text</div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+            <div class="block block_space_xl">
+              <a href="javascript:;" class="text_acc"><b>+ Add another meeting point</b> <span class="text_small">(optional)</span></a>
+            </div>
+            <div class="block block_space_xxl">
+              If your end point doesn’t look right , you can drag the pin to adjust its location.
+              <div class="map"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="javascript:;" class="btn btn_primary btn_big btn_text_regular">
+        Save & continue
+      </a>
+    </div>
+  </main>
+</body>
+
+</html>

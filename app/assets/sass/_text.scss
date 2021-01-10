@@ -5,23 +5,6 @@ a {
   transition: 0.25s ease;
 }
 
-.block {
-  margin: 0.5rem 0;
-  font-size: inherit;
-  line-height: inherit;
-  &_space {
-    &_x {
-      margin: 1rem 0;
-    }
-    &_xl {
-      margin: 1.5rem 0;
-    }
-    &_xxl {
-      margin: 2rem 0;
-    }
-  }
-}
-
 .text {
   &_lh {
     &_15 {
@@ -48,4 +31,36 @@ a {
   margin: 8px 0;
   color: $err;
   font-weight: 700;
+}
+
+.show {
+  display: inline-block;
+  padding-right: 10px;
+  background-image: url(../img/show.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  font-size: 0.666rem;
+  color: #989898;
+  cursor: pointer;
+  &:before {
+    content: 'Show all';
+  }
+}
+
+.page-title {
+  margin: 0.5em 0;
+  font-weight: 700;
+  font-size: 1.777rem;
+}
+
+.h4 {
+  font-size: 1.3333rem;
+  font-weight: 700;
+  margin: 0.375em 0;
+  &__subtitle {
+    margin-bottom: 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.25;
+  }
 }

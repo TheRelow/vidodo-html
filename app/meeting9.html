@@ -62,9 +62,9 @@
         <div class="block elem_w_750">
           <div class="select-wrapper select-wrapper_type_2">
             <select>
-              <option value="123">We pick up all travelers </option>
               <option value="123">We can pick up travelers or meet them at a starting point</option>
               <option value="123">We meet all travelers at a starting point</option>
+              <option value="123">We pick up all travelers </option>
             </select>
           </div>
         </div>
@@ -96,13 +96,51 @@
             Other
           </label>
         </div>
-        <div class="text_small text_warning">
-          Please select one of the option above
+      </div>
+      <div class="option-group block_space_xl">
+        <div class="option-title">How do you want to enter you hotel pickup information</div>
+        <label class="option check">
+          <input class="check__input" type="checkbox">
+          <span class="check__box check__box_circle"></span>
+          I want to define a general area of hotels I pick up from
+          <span class="check__if-not-checked">
+            I will select a radius in a city, neighborhood or specific address and pick up within that radius
+          </span>
+        </label>
+        <label class="option check">
+          <input class="check__input" type="checkbox" checked>
+          <span class="check__box check__box_circle"></span>
+          I want to enter locations one at a time
+          <span class="check__if-not-checked">
+            I will add hotels individually
+          </span>
+        </label>
+      </div>
+      <div class="block block_space_xxl elem_w_750">
+        <div class="block">
+          <b>Add a hotel</b>
+        </div>
+        <div class="search-line block">
+          <input class="input input_search" type="text" class="option">
+          <a href="javascript:;" class="search-line__btn"></a>
+        </div>
+        <div class="block">
+          <a href="javascript:;" class="text_acc"><b>+ Add another meeting point</b></a>
+        </div>
+        <div class="block block_space_xxl">
+          <label class="option check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box"></span>
+            Allow travelers to enter their own pickup location
+            <span class="check__if-not-checked">
+            Do not select this if you only pick up from the hotels you identified.
+          </span>
+          </label>
         </div>
       </div>
       <div class="block block_space_xxl">
         <b>How long befor departure does your pickup start?</b>
-        <div class="block unit-input">
+        <div class="unit-input block">
           <input type="number" class="input unit-input__input" value="0">
           <div class="select-wrapper unit-input__select-wrapper">
             <select class="unit-input__select">
@@ -120,6 +158,42 @@
           This will be displayed on both the product page and travelers' tickets.
         </div>
         <textarea class="elem_w_750">E.g. how to find the pickup location, how travelers can find you.</textarea>
+      </div>
+      <div class="delimiter elem_w_750"></div>
+      <div class="block block_space_xxl">
+        <div class="page-title block_space_xl">Where will you meet travelers that don’t require pickup?</div>
+        <ul class="meeting-list elem_w_750">
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              Meeting point
+            </div>
+            <div class="search-line">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+            <div class="block block_space_xl">
+              <a href="javascript:;" class="text_acc"><b>+ Add another meeting point</b></a>
+            </div>
+            <div class="block block_space_xxl">
+              If your end point doesn’t look right , you can drag the pin to adjust its location.
+              <div class="map"></div>
+            </div>
+            <div class="block option-group">
+              <div class="option-title">Does this tour end at the same location(s) where it started?</div>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                Yes
+              </label>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                No
+              </label>
+            </div>
+          </li>
+        </ul>
       </div>
       <a href="javascript:;" class="btn btn_primary btn_big btn_text_regular">
         Save & continue

@@ -62,9 +62,9 @@
         <div class="block elem_w_750">
           <div class="select-wrapper select-wrapper_type_2">
             <select>
+              <option value="123">We meet all travelers at a starting point</option>
               <option value="123">We pick up all travelers </option>
               <option value="123">We can pick up travelers or meet them at a starting point</option>
-              <option value="123">We meet all travelers at a starting point</option>
             </select>
           </div>
         </div>
@@ -73,53 +73,41 @@
         <h2 class="page-title">
           Now tell us where you pick up travelers
         </h2>
-        <div class="option-group">
-          <div class="option-title">Where do you pick up your travelers?</div>
-          <label class="option check">
-            <input class="check__input" type="checkbox" checked>
-            <span class="check__box"></span>
-            Hotels
-          </label>
-          <label class="option check">
-            <input class="check__input" type="checkbox">
-            <span class="check__box"></span>
-            Ports
-          </label>
-          <label class="option check">
-            <input class="check__input" type="checkbox">
-            <span class="check__box"></span>
-            Airports
-          </label>
-          <label class="option check">
-            <input class="check__input" type="checkbox">
-            <span class="check__box"></span>
-            Other
-          </label>
-        </div>
-        <div class="text_small text_warning">
-          Please select one of the option above
-        </div>
       </div>
       <div class="block block_space_xxl">
-        <b>How long befor departure does your pickup start?</b>
-        <div class="block unit-input">
-          <input type="number" class="input unit-input__input" value="0">
-          <div class="select-wrapper unit-input__select-wrapper">
-            <select class="unit-input__select">
-              <option value="123">minutes</option>
-              <option value="123">hours</option>
-            </select>
-          </div>
-        </div>
-      </div>
       <div class="block block_space_xxl">
-        <div class="block">
-          <b>Add pickup details you'd like travelers to know</b>
-        </div>
-        <div class="block">
-          This will be displayed on both the product page and travelers' tickets.
-        </div>
-        <textarea class="elem_w_750">E.g. how to find the pickup location, how travelers can find you.</textarea>
+        <ul class="meeting-list elem_w_750">
+          <li class="meeting-list__item">
+            <div class="meeting-list__title">
+              Meeting point
+            </div>
+            <div class="search-line">
+              <input class="input input_search" type="text" class="option" value="35340 Lanzarote, Las Palmas, Spain">
+              <a href="javascript:;" class="search-line__btn"></a>
+            </div>
+            <textarea class="option">Briefly describe how travelers will find you, e.g., “across the street from the bus stop.”</textarea>
+            <div class="block block_space_xl">
+              <a href="javascript:;" class="text_acc"><b>+ Add another meeting point</b></a>
+            </div>
+            <div class="block block_space_xxl">
+              If your end point doesn’t look right , you can drag the pin to adjust its location.
+              <div class="map"></div>
+            </div>
+            <div class="block option-group">
+              <div class="option-title">Does this tour end at the same location(s) where it started?</div>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                Yes
+              </label>
+              <label class="option check">
+                <input class="check__input" name="radio" type="radio">
+                <span class="check__box check__box_acc check__box_circle"></span>
+                No
+              </label>
+            </div>
+          </li>
+        </ul>
       </div>
       <a href="javascript:;" class="btn btn_primary btn_big btn_text_regular">
         Save & continue

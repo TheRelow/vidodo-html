@@ -84,7 +84,7 @@ input::-webkit-inner-spin-button {
 
 .unit-input__select {
   height: 100%;
-  min-width: 123px;
+  min-width: 95px;
   margin: 0;
   border-radius: 0 4px 4px 0;
 }
@@ -249,7 +249,6 @@ select {
 .check__if-not-checked {
   display: block;
   height: auto;
-  padding-left: 15px;
   margin-top: 6px;
   font-size: 12px;
   line-height: 1em;
@@ -257,6 +256,7 @@ select {
   transition: 0.25s;
   &_ok {
     position: relative;
+    padding-left: 15px;
     &:before {
       content: '';
       position: absolute;

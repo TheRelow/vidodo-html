@@ -1,0 +1,53 @@
+.meeting-list {
+  counter-reset: ml;
+}
+
+.meeting-list__item {
+  counter-increment: ml;
+}
+
+.meeting-list__item {
+  min-height: 33px;
+  margin: 0.5em 0 2em;
+}
+
+.meeting-list__title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1em 0;
+  padding-left: 44px;
+  font-weight: 700;
+  &:before {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    width: 27px;
+    background-image: url(../img/map-point.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 700;
+    content: counter(ml);
+  }
+}
+
+.meeting-list__controls {
+  margin-right: -10px;
+  font-weight: 500;
+}
+.meeting-list__btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: inherit;
+  &:hover {
+    background-color: rgba(30,40,67,0.1);
+  }
+}

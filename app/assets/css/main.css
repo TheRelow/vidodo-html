@@ -58,6 +58,23 @@ a {
   font-weight: 700;
 }
 
+.img-text {
+  padding-left: 23px;
+  background-image: url(../img/img.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 16px 16px;
+}
+
+.img-text_ok {
+  background-image: url(../img/success.svg);
+}
+
+.img-text_question {
+  background-image: url(../img/question.svg);
+  background-position: center;
+}
+
 .show {
   display: inline-block;
   padding-right: 10px;
@@ -294,6 +311,44 @@ select {
   background: transparent;
 }
 
+.select-custom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  min-width: 380px;
+  padding: 13px;
+  border-radius: 4px;
+  align-items: center;
+  border: 1px solid #DEE0E5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+.select-custom__item {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+  border: 1px solid #D9D9D9;
+  background: #F9F9F9;
+  border-radius: 3px;
+}
+
+.select-custom__item:after {
+  width: 9px;
+  height: 9px;
+  margin: 0 0 -3px 15px;
+  background-image: url(../img/close.svg);
+  background-position: center center;
+  background-size: 9px 9px;
+  background-repeat: no-repeat;
+  content: '';
+}
+
 .option {
   display: block;
   margin: 0.555rem 0;
@@ -512,6 +567,12 @@ select {
   margin: 2rem 0;
 }
 
+.block_frame {
+  padding: 24px;
+  border: 1px solid #ECECEC;
+  border-radius: 14px;
+}
+
 .elem_w_200 {
   max-width: 200px;
 }
@@ -526,6 +587,38 @@ select {
 
 .elem_w_750 {
   max-width: 750px;
+}
+
+.chek-card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.check-card__checkbox {
+  margin: 15px 0 0 0;
+}
+
+.check-card__checkbox_center {
+  margin: -15px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.check-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 64px;
+  margin: 0 24px 0 12px;
+}
+
+.check-card__img_center {
+  display: flex;
+  align-items: center;
+}
+
+.check-card__img img {
+  max-width: 100%;
 }
 
 .header {
@@ -627,22 +720,6 @@ ul.dot li:before {
   height: 5px;
   background: #000;
   border-radius: 50%;
-}
-
-.ok-text {
-  padding-left: 23px;
-  background-image: url(../img/success.svg);
-  background-repeat: no-repeat;
-  background-position: center left;
-  background-size: 16px 16px;
-}
-
-.img-text {
-  padding-left: 23px;
-  background-image: url(../img/img.svg);
-  background-repeat: no-repeat;
-  background-position: center left;
-  background-size: 16px 16px;
 }
 
 .header__wrapper {

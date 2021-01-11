@@ -173,7 +173,44 @@ select {
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
-  background:transparent; }
+  background:transparent;
+}
+
+.select-custom {
+  position:relative;
+  z-index: 2;
+  display:flex;
+  width: 100%;
+  min-width: 380px;
+  padding: 13px;
+  border-radius: 4px;
+  align-items:center;
+  border: 1px solid #DEE0E5;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background:transparent;
+}
+.select-custom__item {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+  border: 1px solid #D9D9D9;
+  background: #F9F9F9;
+  border-radius: 3px;
+  &:after {
+    width: 9px;
+    height: 9px;
+    margin: 0 0 -3px 15px;
+    background-image: url(../img/close.svg);
+    background-position: center center;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
 
 .option {
   display: block;

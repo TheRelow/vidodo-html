@@ -33,6 +33,21 @@ a {
   font-weight: 700;
 }
 
+.img-text {
+  padding-left: 23px;
+  background-image: url(../img/img.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 16px 16px;
+  &_ok {
+    background-image: url(../img/success.svg);
+  }
+  &_question {
+    background-image: url(../img/question.svg);
+    background-position: center;
+  }
+}
+
 .show {
   display: inline-block;
   padding-right: 10px;

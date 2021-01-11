@@ -1,0 +1,30 @@
+@import "variables";
+
+.chek-card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.check-card__checkbox {
+  margin: 15px 0 0 0;
+  &_center {
+    margin: -15px 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.check-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 64px;
+  margin: 0 24px 0 12px;
+  &_center {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+  }
+}

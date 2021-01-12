@@ -34,6 +34,15 @@ a {
   transition: 0.25s ease;
 }
 
+.link {
+  color: #FF5134;
+}
+
+.link:hover {
+  color: #1E2843;
+  text-decoration: underline;
+}
+
 .text_lh_15 {
   line-height: 1.5;
 }

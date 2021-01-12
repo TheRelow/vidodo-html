@@ -5,6 +5,14 @@ a {
   transition: 0.25s ease;
 }
 
+.link {
+  color: $acc;
+  &:hover {
+    color: #1E2843;
+    text-decoration: underline;
+  }
+}
+
 .text {
   &_lh {
     &_15 {

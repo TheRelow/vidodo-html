@@ -1,0 +1,43 @@
+@import "variables";
+
+.included-list {
+  border-top: 1px solid #ECECEC;
+}
+
+.included-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 20px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.included-list__controls {
+  position: relative;
+  bottom: -2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.included-list__btn {
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+  &_edit {
+    background-color: transparent;
+    background-image: url(../img/pencil.svg);
+  }
+  &_remove {
+    background-color: transparent;
+    background-image: url(../img/trash-dark.svg);
+  }
+}

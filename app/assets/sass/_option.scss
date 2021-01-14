@@ -35,6 +35,7 @@ input::-webkit-inner-spin-button {
       width: auto;
       padding: 0 22px;
       min-width: 142px;
+      font-size: 12px;
     }
   }
   &_dot {
@@ -224,11 +225,18 @@ select {
 .option-title {
   margin: 0.555rem 0;
   font-weight: 700;
+  &_text_regular {
+    font-weight: 500;
+  }
 }
 
 .check {
   position: relative;
   padding-left: 30px;
+  &_single {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .check__input {

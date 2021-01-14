@@ -187,6 +187,7 @@ input::-webkit-inner-spin-button {
   width: auto;
   padding: 0 22px;
   min-width: 142px;
+  font-size: 12px;
 }
 
 .select-wrapper_dot:before {
@@ -372,9 +373,18 @@ select {
   font-weight: 700;
 }
 
+.option-title_text_regular {
+  font-weight: 500;
+}
+
 .check {
   position: relative;
   padding-left: 30px;
+}
+
+.check_single {
+  width: 20px;
+  height: 20px;
 }
 
 .check__input {
@@ -717,6 +727,53 @@ select {
 .included-list__btn_remove {
   background-color: transparent;
   background-image: url(../img/trash-dark.svg);
+}
+
+.languages-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.languages-list__item_main {
+  align-items: flex-end;
+  padding-bottom: 19px;
+  color: #888A93;
+}
+
+.languages-list__item:last-child {
+  border-bottom: 0;
+}
+
+.languages-list__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+}
+
+.yes-no-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.yes-no-list__controls {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-no-list__el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .header {

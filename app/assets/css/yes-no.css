@@ -1,0 +1,21 @@
+.yes-no-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.yes-no-list__controls {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-no-list__el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}

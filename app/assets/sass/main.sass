@@ -54,6 +54,7 @@ body
   border: 2px solid $acc
   color: #1E2843
   font-weight: 700
+  font-size: 16px
   cursor: pointer
   &:hover
     color: $acc
@@ -66,8 +67,11 @@ body
     height: 59px
     min-width: 260px
     padding: 0 44px
+    font-size: 18px
   &_text_regular
     font-weight: 500
+  &_text_sm
+    font-size: 14px
 
 .ul__custom
   margin: 0.5em 0
@@ -144,6 +148,12 @@ ul.dot
       font-weight: 700
       border-bottom: 2px solid $acc
 
+.header__side
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
 .main
   padding-top: 22px
 
@@ -202,6 +212,9 @@ ul.dot
   padding: 13px 0 25px
   &:not(:last-child)
     border-bottom: 1px solid $light
+
+.list__item-content
+  padding-right: 40px
 
 .photos
   display: flex
@@ -352,7 +365,7 @@ ul.dot
 .photo__btn
   background-color: rgba(0,0,0,0.5)
   border: none
-  padding: 4px 10px 6px
+  padding: 5px 10px
   color: #fff
   font-size: 16px
   font-weight: 500
@@ -374,7 +387,7 @@ ul.dot
     .photo__caption
       padding: 14px 18px
       font-size: 18px
-  &_add
+  &_no-caption
     .photo__caption
       display: none
   &_edit

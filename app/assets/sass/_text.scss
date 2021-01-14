@@ -19,6 +19,9 @@ a {
       line-height: 1.5;
     }
   }
+  &_gray {
+    color: #888A93;
+  }
 }
 
 .text_regular {
@@ -52,7 +55,7 @@ a {
   }
   &_question {
     background-image: url(../img/question.svg);
-    background-position: center;
+    background-position: right center;
   }
 }
 

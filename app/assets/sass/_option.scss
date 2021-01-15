@@ -74,6 +74,15 @@ input::-webkit-inner-spin-button {
       border: none;
     }
   }
+  &_number-format {
+    min-width: 100px;
+    max-width: 100px;
+    margin: 0 10px 0 0;
+    select {
+      min-width: 100px;
+      max-width: 100px;
+    }
+  }
 }
 
 .input {
@@ -88,7 +97,11 @@ input::-webkit-inner-spin-button {
   font-size: 1rem;
   line-height: 1.1rem;
   transition: 0.25s;
-  &_search {
+  &_phone {
+    margin: 0;
+  }
+  &_currency {
+    margin: 0;
   }
   //&_search:not(:focus) {
   //  background-image: url(../img/search.svg);
@@ -96,6 +109,22 @@ input::-webkit-inner-spin-button {
   //  background-size: 24px 24px;
   //  background-position: center right 16px;
   //}
+}
+
+.currency-block {
+  position: relative;
+  &:before {
+    content: 'EUR';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    border-right: 1px solid #DEE0E5;
+  }
 }
 
 .unit-input {
@@ -188,7 +217,7 @@ select {
   width: 100%;
   min-width: 380px;
   padding-left: 12px;
-  padding-right: 28px;
+  padding-right: 40px;
   border-radius: 4px;
   align-items:center;
   border: 1px solid #DEE0E5;
@@ -241,6 +270,12 @@ select {
 
 .option-group {
   margin: 1rem 0;
+  &_phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5em 0;
+  }
 }
 
 .option-title {
@@ -257,6 +292,9 @@ select {
   &_single {
     width: 20px;
     height: 20px;
+  }
+  &_toggler {
+    padding-left: 43px;
   }
 }
 
@@ -309,6 +347,23 @@ select {
       background: $acc;
     }
   }
+  &_toggler {
+    width: 35px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #B9B9B9;
+    border: none;
+    &:after {
+      position: absolute;
+      left: 4px;
+      top: 3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 1;
+    }
+  }
 }
 
 .check__input:checked ~ .check__box {
@@ -324,6 +379,14 @@ select {
       border-radius: 50%;
       background-image: none;
       background-color: $acc;
+    }
+  }
+  &_toggler {
+    background-color: #62be11;
+    &:after {
+      left: auto;
+      right: 4px;
+      background: #fff;
     }
   }
 }

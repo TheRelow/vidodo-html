@@ -25,3 +25,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.row_price-table {
+  .col {
+    width: calc(50% - 9px);
+  }
+}

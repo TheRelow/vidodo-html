@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Title</title>
+  <link rel="stylesheet" href="assets/fonts/Gilroy/stylesheet.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="header__main">
+        <img class="logo" src="assets/img/logo.svg">
+        <nav>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Booking</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Finance</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link active" href="javascript:;">Product</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Availability</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Performance</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="javascript:;">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__side">
+        <div class="select-wrapper select-wrapper_user">
+          <select>
+            <option value="123">vvv</option>
+            <option value="123">vvv</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper main__wrapper">
+      <a href="javascript:;" class="back">Back to product content</a>
+      <h1 class="page-title">
+        Create pricing schedules
+      </h1>
+      <div class="block block_space_xxl elem_w_750">
+        <div class="pricing-block">
+          <div class="pricing-block__line pricing-block__line_date">
+            Oct 31, 2020 - no end date
+            <div class="pricing-block__edit">
+              <div class="pricing-block__edit-options">
+                <a href="javascript:;" class="pricing-block__edit-btn">Edit prices</a>
+                <a href="javascript:;" class="pricing-block__edit-btn">Add start times</a>
+                <a href="javascript:;" class="pricing-block__edit-btn">Add new prices</a>
+                <a href="javascript:;" class="pricing-block__edit-btn">Add new prices</a>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-block__line">
+            Sun, Mon, Tue, Wed, Thu, Fri, Sat
+            <br>
+            1:00am, 1:30pm
+            <br>
+            Adult: €20,00
+            <br>
+            Child: €0,00
+            <div class="pricing-block__edit">
+              <div class="pricing-block__edit-options">
+                <a href="javascript:;" class="pricing-block__edit-btn">Edit prices</a>
+                <a href="javascript:;" class="pricing-block__edit-btn">Add start times</a>
+                <a href="javascript:;" class="pricing-block__edit-btn">Add new prices</a>
+                <a href="javascript:;" class="pricing-block__edit-btn">Add new prices</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block block_space_x">
+          <a class="text_acc" href="javascript:;">
+            <b>+ Add another</b>
+          </a>
+        </div>
+        <div class="delimiter block_space_xl"></div>
+        <div class="block text_gray">Note: prices above are suggested retail prices</div>
+      </div>
+      <div class="block block_space_xxl elem_w_750">
+        <div class="pricing-block pricing-block_add">
+          <div class="pricing-block__add">
+            <div class="pricing-block__text">
+              <div class="block"><b>Add another option</b></div>
+              <div class="block">
+                An option is a unique version of your product that offers specific languages, starting points, or customizations.
+              </div>
+            </div>
+            <div class="pricing-block__controls">
+              <a href="javascript:;" class="btn">
+                + Add option
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="popup-area">
+    <div class="popup popup_w_800">
+      <div class="page-title">
+        Edit prices
+      </div>
+      <div class="block">
+        <b>Oct 31, 2020 - no end date</b>
+      </div>
+      <div class="block block_space_x">
+        <label class="option check check_toggler">
+          <input class="check__input" type="checkbox">
+          <span class="check__box check__box_toggler"></span>
+          Enable tiered pricing <span class="img-text img-text_question"></span>
+        </label>
+      </div>
+      <div class="block block_space_xxl block_frame block_bg_gray elem_w_750">
+        <div class="price-table">
+          <div class="price-table__left">
+          </div>
+          <div class="price-table__right">
+            <div class="row row_price-table">
+              <div class="col">Suggested retail price <span class="img-text img-text_question"></span></div>
+              <div class="col">Amount you will get paid <span class="img-text img-text_question"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="price-table">
+          <div class="price-table__left">
+            <label class="option check">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Adult
+            </label>
+          </div>
+          <div class="price-table__right">
+            <div class="row row_price-table">
+              <div class="col currency-block">
+                <input type="text" class="input input_currency">
+              </div>
+              <div class="col currency-block">
+                <input type="text" class="input input_currency">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-table">
+          <div class="price-table__left">
+            <label class="option check">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Child
+            </label>
+          </div>
+          <div class="price-table__right">
+            <div class="row row_price-table">
+              <div class="col currency-block">
+                <input type="text" class="input input_currency">
+              </div>
+              <div class="col currency-block">
+                <input type="text" class="input input_currency">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-table">
+          <div class="price-table__left">
+            <label class="option check">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Youth
+            </label>
+          </div>
+          <div class="price-table__right">
+            <div class="block">
+              <span class="text_small text_gray">Not available. If youth are allowed for free, set the retail price to $0.00.</span>
+            </div>
+          </div>
+        </div>
+        <div class="price-table">
+          <div class="price-table__left">
+            <label class="option check">
+              <input class="check__input" type="checkbox">
+              <span class="check__box"></span>
+              Senior
+            </label>
+          </div>
+          <div class="price-table__right">
+            <div class="block">
+              <span class="text_small text_gray">Not available.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block_space_xxl">
+        <div class="block">
+          <b>Days when these prices apply</b>
+        </div>
+        <div class="block">
+          Sun, Mon, Tue, Wed, Thu, Fri, Sat <span class="img-text img-text_dot_acc">Edit</span>
+        </div>
+      </div>
+      <div class="block block_space_xxl">
+        <div class="block">
+          <b>Days when these prices apply</b>
+        </div>
+        <div class="block">
+          <b>Note:</b> To enter your pickup time and information, go to Meeting and Pickup.
+        </div>
+        <div class="block">
+          1:00am, 1:30pm <span class="img-text img-text_dot_acc">Edit</span>
+        </div>
+      </div>
+      <div class="popup__controls popup__controls_type_2">
+        <a href="javascript:;" class="btn btn_text_regular">
+          Cancel
+        </a>
+        <a href="javascript:;" class="btn btn_text_regular btn_primary">
+          Add
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

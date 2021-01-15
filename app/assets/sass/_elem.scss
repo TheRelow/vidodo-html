@@ -1,5 +1,8 @@
 .elem {
   &_w {
+    &_100 {
+      max-width: 100px;
+    }
     &_200 {
       max-width: 200px;
     }

@@ -22,6 +22,9 @@ a {
   &_gray {
     color: #888A93;
   }
+  &_fz_13 {
+    font-size: 13px;
+  }
 }
 
 .text_regular {
@@ -56,6 +59,24 @@ a {
   &_question {
     background-image: url(../img/question.svg);
     background-position: right center;
+  }
+  &_dot_acc {
+    position: relative;
+    padding-left: 34px;
+    background: none;
+    color: $acc;
+    font-weight: 700;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      left: 14px;
+      top: calc(50% - 4px);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $acc;
+      content: '';
+    }
   }
 }
 

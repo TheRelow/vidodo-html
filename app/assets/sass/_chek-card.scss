@@ -5,6 +5,10 @@
   justify-content: flex-start;
 }
 
+.check-card__content {
+  width: calc(100% - 64px);
+}
+
 .check-card__checkbox {
   margin: 15px 0 0 0;
   &_center {
